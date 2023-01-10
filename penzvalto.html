@@ -7,12 +7,19 @@
     <title>Pénzváltó</title>
 
     <script>
+        function check() {
+            let ft = document.getElementById("Ft").value
+            let euro = ft / 394.85
+            let dollar = ft / 370
+            let jen = ft / 2.81
+            alert("euro: " + euro.toFixed(2) + "    dollár: " + dollar.toFixed(2) + "   jen: " + jen.toFixed(2))
+        }
     </script>
 </head>
 
 <body>
     <form>
-        <label for="Ft">Add meg az összeget: </label> <br>
+        <label for="FT">Add meg az összeget: </label> <br>
         <input type="text" id="Ft" name="Ft" value=" "> <br><br>
     </form>
 
